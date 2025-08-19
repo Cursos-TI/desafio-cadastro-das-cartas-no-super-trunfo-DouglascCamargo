@@ -12,7 +12,7 @@ int main() {
     float PIB1, PIB2;
     int Numeros_de_pontos_turisticos1, Numeros_de_pontos_turisticos2;
 
-    // primeiro usuario irá realizar o cadastramento da carta.
+    // primeiro usuario irá realizar o cadastramento da carta 1 e enseguida da carta 2.
 
     printf("Digite o numero da sua Carta ");
     scanf("%d", &Carta1);
@@ -67,7 +67,7 @@ int main() {
     scanf("%d,\n", &Numeros_de_pontos_turisticos2);
 
     printf("\n"); 
-    //colcoado printf("\n") para separar informação digitada pelo usuario da impressao das carta
+    //colcoado printf("\n") para separar informação digitada pelo usuario da impressao das cartas
 
     printf("Informações da Carta: \n");
     printf("Carta: %d\n", Carta1);
