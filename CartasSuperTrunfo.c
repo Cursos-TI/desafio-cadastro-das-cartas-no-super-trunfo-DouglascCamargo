@@ -118,6 +118,9 @@ int main() {
     SuperPoder2 = (float) (Populaçao2 + Area2 + PIB2 + Numeros_de_pontos_turisticos2 + Densidade_populacional2 + PIB_per_capita2);
     printf("Super Poder: %.5f\n", SuperPoder2);
 
+    printf("\n");
+    printf("Resultados: \n");
+
     //comparando cartas
     Resultado1 = Populaçao1 > Populaçao2;
     Resultado2 = Populaçao1 > Populaçao2;
