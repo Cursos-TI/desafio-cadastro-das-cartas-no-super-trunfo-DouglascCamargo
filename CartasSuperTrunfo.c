@@ -13,6 +13,8 @@ int main() {
     int Numeros_de_pontos_turisticos1, Numeros_de_pontos_turisticos2;
     float Densidade_populacional1, Densidade_populacional2;
     float PIB_per_capita1, PIB_per_capita2;
+    float SuperPoder1, SuperPoder2;
+    int Resultado1, Resultado2;
 
     // primeiro usuario irá realizar o cadastramento da carta 1 e enseguida da carta 2.
 
@@ -87,6 +89,10 @@ int main() {
     printf("Densidade populacional: %.5f\n", Densidade_populacional1);
     PIB_per_capita1 = (float)(PIB1 / Populaçao1);
     printf("PIB Per capita: %.5f\n", PIB_per_capita1);
+
+     //somando atributos para super poderes
+    SuperPoder1 = (float) (Populaçao1 + Area1 + PIB1 + Numeros_de_pontos_turisticos1 + Densidade_populacional1 + PIB_per_capita1);
+    printf("Super Poder: %.5f\n", SuperPoder1);
     
     printf("\n"); 
     //colcoado printf("\n") para deixa uma linha em branco
@@ -107,6 +113,36 @@ int main() {
     printf("Densidade populacional: %.5f\n", Densidade_populacional2);
     PIB_per_capita2 = (float)(PIB2 / Populaçao2);
     printf("PIB Per capita: %.5f\n", PIB_per_capita2);
+
+    //somando atributos para super poderes
+    SuperPoder2 = (float) (Populaçao2 + Area2 + PIB2 + Numeros_de_pontos_turisticos2 + Densidade_populacional2 + PIB_per_capita2);
+    printf("Super Poder: %.5f\n", SuperPoder2);
+
+    //comparando cartas
+    Resultado1 = Populaçao1 > Populaçao2;
+    Resultado2 = Populaçao1 > Populaçao2;
+    printf("Carta 1 = %d\n",Resultado1, Populaçao1);
+    printf("Carta 2 = %d\n",Resultado2, Populaçao2);
+    Resultado1 = Area1 > Area2; 
+    Resultado2 = Area1 > Area2;
+    printf("Carta 1 = %d\n",Resultado1, Area1);
+    printf("Carta 2 = %d\n",Resultado2, Area2);
+    Resultado1 = PIB1 > PIB2;
+    Resultado2 = PIB1 > PIB2;
+    printf("Carta 1 = %d\n",Resultado1, PIB1);
+    printf("Carta 2 = %d\n",Resultado2, PIB2);
+    Resultado1 = Numeros_de_pontos_turisticos1 > Numeros_de_pontos_turisticos2;
+    Resultado2 = Numeros_de_pontos_turisticos1 > Numeros_de_pontos_turisticos2;
+    printf("Carta 1 = %d\n",Resultado1, Numeros_de_pontos_turisticos1);
+    printf("Carta 2 = %d\n",Resultado2, Numeros_de_pontos_turisticos2);
+    Resultado1 = Densidade_populacional1 > Densidade_populacional2;
+    Resultado2 = Densidade_populacional1 > Densidade_populacional2;
+    printf("Carta 1 = %d\n",Resultado1, Densidade_populacional1);
+    printf("Carta 2 = %d\n",Resultado2, Densidade_populacional2);
+    Resultado1 = PIB_per_capita1 > PIB_per_capita2;
+    Resultado2 = PIB_per_capita1 > PIB_per_capita2;
+    printf("Carta 1 = %d\n",Resultado1, PIB_per_capita1);
+    printf("Carta 2 = %d\n",Resultado2, PIB_per_capita2);
 
 
     return 0;
